@@ -4,7 +4,7 @@
 
 ## Quick Start
 ```bash
-git clone https://github.com/yourusername/stonks.git
+git clone https://github.com/Chintiw/stonks.git
 cd stonks
 docker-compose up --build  # Runs all
 ```
