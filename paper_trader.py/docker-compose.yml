@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  paper-trader:
+    build: .
+    image: paper-trader:latest
+    container_name: paper-trading-engine
+    volumes:
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1  # For real-time logs

@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  mean-reversion:
+    build: .
+    image: mean-reversion:latest
+    container_name: mean-strategy
+    volumes:
+      - ./output:/app/output

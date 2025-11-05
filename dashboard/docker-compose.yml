@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  dashboard:
+    build: .
+    image: stonks-dashboard:latest
+    container_name: stonks-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ../output:/app/output  # Mount shared output from other services
+    depends_on:
+      - paper-trader  # Optional: Wait for data gen

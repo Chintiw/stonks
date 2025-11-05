@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  screener:
+    build: .  # Builds from Dockerfile in current dir
+    image: nifty-screener:latest
+    container_name: nifty-stock-screener

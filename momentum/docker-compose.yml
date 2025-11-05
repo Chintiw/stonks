@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  momentum:
+    build: .
+    image: momentum:latest
+    container_name: momentum-strategy
+    volumes:
+      - ./output:/app/output

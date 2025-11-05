@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  ma-crossover:
+    build: .
+    image: ma-crossover:latest
+    container_name: ma-strategy
+    volumes:
+      - ./output:/app/output  # Mount for plot/CSV exports
